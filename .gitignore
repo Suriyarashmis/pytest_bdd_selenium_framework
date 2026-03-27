@@ -1,0 +1,16 @@
+# Virtual Environment
+.venv/
+
+# IDE - PyCharm
+.idea/
+
+# Reports
+reports/
+
+# pytest cache
+.pytest_cache/
+__pycache__/
+
+
+# Backup Folder
+Backup/
