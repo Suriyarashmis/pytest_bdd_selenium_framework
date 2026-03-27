@@ -88,7 +88,7 @@ PyTest-BDD-Automation/
 
 ```bash
 # 1. Clone the repository
-git clone https://gitlab.com/suriyarashmi1/PyTest-BDD-Automation.git
+git clone https://github.com/Suriyarashmis/pytest_bdd_selenium_framework.git 
 cd PyTest-BDD-Automation
 
 # 2. Create and activate virtual environment
@@ -188,14 +188,15 @@ BS_ACCESS_KEY=your_access_key
 
 ## CI/CD
 
-This project includes a GitLab CI pipeline (`.gitlab-ci.yml`) that:
-- Triggers automatically on every push
-- Runs tests in a headless Chrome container
-- Saves HTML reports as downloadable artifacts (retained for 7 days)
+This project includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that:
+- Triggers automatically on push and pull requests
+- Runs tests in a headless Chrome container using Selenium
+- Installs dependencies and executes tests with pytest
+- Generates HTML reports and saves them as downloadable artifacts
 
-View pipeline results:
+View workflow results:
 ```
-GitLab → Build → Pipelines
+GitHub → Actions → Run UI Tests → Run
 ```
 
 ---
@@ -212,7 +213,4 @@ GitLab → Build → Pipelines
 
 ---
 
-## Author
 
-Suriyarashmi S
-[GitLab Profile](https://gitlab.com/suriyarashmi1)
