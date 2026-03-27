@@ -1,6 +1,5 @@
 name: Run UI Tests
 
-# Trigger the workflow on pushes and pull requests
 on:
   push:
   pull_request:
