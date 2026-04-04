@@ -2,12 +2,12 @@ Feature: Login functionality
 
   Scenario: Username only shows password required error
     Given I am on the login page
-    When I enter username "random_user" and click login
+    When I enter username "standard_user" and click login
     Then I should see error "Password is required"
 
   Scenario: Password only shows username required error
     Given I am on the login page
-    When I enter password "random_sauce" and click login
+    When I enter password "secret_sauce" and click login
     Then I should see error "Username is required"
 
   Scenario: Invalid credentials shows mismatch error
